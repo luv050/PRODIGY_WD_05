@@ -1,0 +1,225 @@
+@import url(keyframes.css);
+
+* {
+  margin: 0;
+  user-select: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0px 0px 10px black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  height: 5rem;
+  width: 100vw;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3,
+input[type='text'],
+label {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+input,
+label,
+img {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 0px solid black;
+  outline: none;
+}
+
+input[type='text'] {
+  background-color: transparent;
+  color: black;
+  text-shadow: none;
+  padding: 0.2rem;
+}
+
+input[type='checkbox'] {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 0rem;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.581);
+  transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+  background-color: black;
+}
+
+.drop,
+.snowDrop {
+  position: absolute;
+  top: -50px;
+  height: 5px;
+  width: 5px;
+}
+
+.drop {
+  background-color: aqua;
+  animation: droplet 1s ease-in;
+  box-shadow: 0 0 10px 0 blue;
+}
+
+.snowDrop {
+  background-color: white;
+  animation: droplet 3s ease-in;
+  box-shadow: 0 0 10px 0 white;
+}
+
+.light {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  animation: thunder 0.5s;
+  opacity: 0;
+}
+
+.infoSubContainer,
+.forecastDay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  gap: 1rem;
+}
+
+#settingContainer,
+#searchField,
+#checkboxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#checkboxContainer {
+  margin-top: 1rem;
+}
+
+#searchField {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  gap: 0rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+#searchField img {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+#searchField img:hover {
+  transform: scale(1.2);
+}
+#searchField img:active {
+  transform: scale(0.7);
+}
+
+#imageDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#content {
+  display: flex;
+  height: 600px;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mainInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#feelsLikeContainer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#windContainer,
+#humidityContainer,
+#pressureContainer,
+#uvContainer {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#windDirection {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+
+#forecastContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,34 @@
+@media only screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    height: 10rem;
+  }
+
+  input[type='text'] {
+    width: 10rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  body {
+    height: 100vh;
+    overflow-y: scroll;
+    background-repeat: repeat;
+  }
+
+  #content {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10rem;
+  }
+
+  #forecastContainer {
+    flex-direction: column;
+  }
+
+  input[type='checkbox'] {
+    margin-bottom: 1rem;
+  }
+}
